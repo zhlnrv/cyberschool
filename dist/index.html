@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиберКурс32</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__row container">
+        <div class="header__logo">
+            <img src="../images/logo_v2.webp" class="header__logo-img" alt="header_logo">
+            <p class="header__title"></p>
+        </div>
+        <div class="header__nav">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a class="menu-toggle" href="#course">Курсы / Стоимость</a>
+                    </li>
+                    <li><a href="#practice">Опыт</a></li>
+                    <li><a href="#team">Наша команда</a></li>
+                </ul>
+            </nav>
+            <a class="header__btn open-popup" href="#">Задать вопрос</a>
+        </div>
+    </div>
+</header>
+<div class="popup" id="popup">
+    <div class="popup__window">
+        <a href="" class="popup__close-icon"><img src="../images/sprite.svg#close-icon" class="svg-close-icon-dims popup__closed" alt="close-icon"></a>
+        <p class="popup__title">Хотите записаться на курс?<br>Остались вопросы?<br>Нужна помощь в выбором курса?</p>
+        <span class="popup__info">Выберите любой удобный способ связи и Вы сможете напрямую связаться с куратором курсов, и уточнить все интересующие вопросы.</span>
+        <div class="popup__connect">
+            <div class="popup__contact"><a class="popup__link" href="#"><img src="../images/sprite.svg#whatsapp-icon" class="svg-whatsapp-icon-dims" alt="whatsapp-icon">WhatsApp</a></div>
+            <div class="popup__contact"><a class="popup__link" href="#"><img src="../images/sprite.svg#vk-icon" class="svg-vk-icon-dims" alt="vk-icon">VK</a></div>
+            <div class="popup__contact"><a class="popup__link" href="#"><img src="../images/sprite.svg#telegram-icon" class="svg-telegram-icon-dims" alt="telegram-icon">Telegram</a></div>
+            <div class="popup__contact"><a class="popup__link" href="#"><img src="../images/sprite.svg#phone-call-icon" class="svg-phone-call-icon-dims" alt="phone-call-icon">Телефон</a></div>
+        </div>
+    </div>
+</div>
+<section class="hero">
+    <div class="container hero__row">
+        <div class="hero__content">
+            <h1 class="hero__title">Твой помощник в мире обучения информационной безопасности!</h1>
+            <ul class="hero__list">
+                <li><img src="../images/sprite.svg#point_hero" class="svg-point_hero-dims" alt="point_hero">Обучаем востребованой профессии</li>
+                <li><img src="../images/sprite.svg#point_hero" class="svg-point_hero-dims" alt="point_hero">Преподавательский состав БГТУ</li>
+                <li><img src="../images/sprite.svg#point_hero" class="svg-point_hero-dims" alt="point_hero">Широкий выбор курсов по специальности</li>
+                <li><img src="../images/sprite.svg#point_hero" class="svg-point_hero-dims" alt="point_hero">"Сложное" - доступным языком</li>
+            </ul>
+            <div class="hero__support">
+                <a href="#course">Выбрать курс</a>
+                <a href="#" class="help-popup">Помочь с выбором</a>
+            </div>
+        </div>
+        <div class="hero__img">
+            <div class="hero__circle">
+                <img src="../images/sprite.svg#Path3" class="svg-Path3-dims" alt="Path3">
+                <img src="../images/sprite.svg#wave_icon" class="svg-wave_icon-dims first-wave" alt="wave_icon">
+                <img src="../images/sprite.svg#wave_icon" class="svg-wave_icon-dims second-wave" alt="wave_icon">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="course" id="course">
+    <div class="container course__row">
+        <h2 class="course__title">Выбери подходящий курс</h2>
+        <span class="course__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro error doloremque beatae omnis rerum inventore illum, necessitatibus nihil dolores sequi vitae in architecto tenetur dolore aperiam nostrum, debitis quasi obcaecati animi et. Quos doloremque consectetur provident ea, suscipit corporis impedit modi laudantium ratione dignissimos minima, placeat quod. Veniam maiores rerum molestias recusandae reiciendis esse tempora.</span>
+        <div class="course__choice">
+            <div class="course__card">
+                <div class="course__inner">
+                    <div class="course__front">
+                        <p class="course__name">Профессиональная переподготовка</p>
+                        <span class="course__brief">Этот вид обучения позволяет людям сменить профессию или получить дополнительную квалификацию в своей текущей области.</span>
+                        <img src="../images/prof_pere.webp" class="course__icons" alt="prof_pere">
+                    </div>
+                    <div class="course__back">    
+                            <details class="details">
+                                <summary class="details__title"><p>Информационная безопасность. Обеспечение защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, криптографическими и некриптографическими методами</p></summary>
+                                <div class="details__content">
+                                    <table class="details__table" border="1" width="100%">
+                                        <tr>
+                                            <td>Объем программы, часов</td>
+                                            <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                            <td>Стоимость обучения 1 слушателя, руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>554</td>
+                                            <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obrazovatelnuyu-deyatelnost?ysclid=lsbenizvvm35949564
+                                                <br>http://isedu.ru/documents.dopprof/index.htm
+                                                </td>
+                                            <td>80 000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </details>
+                              <details class="details">
+                                <summary class="details__title"><p>Техническая защита информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну</p></summary>
+                                <div class="details__content">
+                                    <table class="details__table" border="1" width="100%">
+                                        <tr>
+                                            <td>Объем программы, часов</td>
+                                            <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                            <td>Стоимость обучения 1 слушателя, руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>506</td>
+                                            <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                            <td>63 000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </details>
+                              <details class="details">
+                                <summary class="details__title"><p>Защита данных в системах проводной и радиосвязи</p></summary>
+                                <div class="details__content">
+                                    <table class="details__table" border="1" width="100%">
+                                        <tr>
+                                            <td>Объем программы, часов</td>
+                                            <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                            <td>Стоимость обучения 1 слушателя, руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>504</td>
+                                            <td>-</td>
+                                            <td>63 000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </details>
+                              <details class="details">
+                                <summary class="details__title"><p>Противодействие компьютерным преступлениям в сфере информационно-телекоммуникационных технологий</p></summary>
+                                <div class="details__content">
+                                    <table class="details__table" border="1" width="100%">
+                                        <tr>
+                                            <td>Объем программы, часов</td>
+                                            <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                            <td>Стоимость обучения 1 слушателя, руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>256</td>
+                                            <td>-</td>
+                                            <td>40 000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </details>
+                             
+                    </div>
+                </div>
+            </div>
+            <div class="course__card">
+                <div class="course__inner">
+                    <div class="course__front">
+                        <p class="course__name">Повышение квалификации</p>
+                        <span class="course__brief">В процессе повышения квалификации специалист осваивает новые технологии, методики и подходы в своей профессиональной деятельности, расширяет общетеоретическую базу и развивает специально-технологические умения.</span>
+                        <img src="../images/povish_kval.webp" class=" course__icons" alt="povish_kval_course">
+                    </div>
+                    <div class="course__back">    
+                        <details class="details">
+                            <summary class="details__title"><p>Основы информационной безопасности и защита государственной тайны</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>25000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Защита персональных данных. Построение модели угроз безопасности информации систем и сетей</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>25000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Основы компьютерной криминалистики и методики реагирования на инциденты информационной безопасности</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Информационная безопасность</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>102</td>
+                                        <td>-</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                         <details class="details">
+                            <summary class="details__title"><p>Программа повышения квалификации специалистов, работающих в области обеспечения безопасности значимых объектов критической информационной инфраструктуры</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                         <details class="details">
+                            <summary class="details__title"><p>Техническая защита информации. Организация защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                        <details class="details">
+                            <summary class="details__title"><p>Техническая защита информации. Способы и средства защиты информации от несанкционированного доступа</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Техническая защита информации. Организация защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, от утечки по техническим каналам</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>36000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                    </div>
+                </div>
+            </div>
+            <div class="course__card">
+                <div class="course__inner">
+                    <div class="course__front">
+                        <p class="course__name">Экспресс курсы</p>
+                        <span class="course__brief">Короткие образовательные программы, позволяющие в максимально сжатое время пройти весь необходимый для освоения заданной предметной области материал.</span>
+                        <img src="../images/express-course.webp" class="course__icons" alt="express_course">
+                    </div>
+                    <div class="course__back">    
+                        <details class="details">
+                            <summary class="details__title"><p>Основы защиты персональных данных</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Подписка на 2 нед.</td>
+                                        <td>-</td>
+                                        <td>5000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Основы расследования инцидентов информационной безопасности</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Подписка на 2 нед.</td>
+                                        <td>-</td>
+                                        <td>5000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Фишинг</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Подписка на 2 нед.</td>
+                                        <td>-</td>
+                                        <td>5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Методы противодействия негативному воздействию в сети интернет</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Подписка на 2 нед.</td>
+                                        <td>-</td>
+                                        <td>5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Обеспечение информационной безопасности объектов КИИ</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Подписка на 2 нед.</td>
+                                        <td>-</td>
+                                        <td>5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>     
+                    </div>
+                </div>
+            </div>
+            <div class="course__card">
+                <div class="course__inner">
+                    <div class="course__front">
+                        <p class="course__name">Акционные предложения при совместной покупке нескольких курсов</p>
+                        <span class="course__brief">Специальные предложения, которые предоставляют возможность приобрести товары или услуги по сниженной стоимости.</span>
+                        <img src="../images/akcia-predl.webp" class="course__icons" alt="akcia_predl_course">
+                    </div>
+                    <div class="course__back">    
+                        <details class="details">
+                            <summary class="details__title"><p>Акционное предложение №1</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Наименование программы</td>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Программа повышения квалификации специалистов, работающих в области обеспечения безопасности значимых объектов критической информационной инфраструктуры</td>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Основы компьютерной криминалистики и методики реагирования на инциденты информационной безопасности</td>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>30000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Акционное предложение №2</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Наименование программы</td>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Информационная безопасность. Обеспечение защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, криптографическими и некриптографическими методами</td>
+                                        <td>554</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obrazovatelnuyu-deyatelnost?ysclid=lsbenizvvm35949564
+                                        <br>http://isedu.ru/documents.dopprof/index.htm</td>
+                                        <td>80000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Противодействие компьютерным преступления в сфере информационно-телекоммуникационных технологий, (дистанционный автономный формат)</td>
+                                        <td>256</td>
+                                        <td>-</td>
+                                        <td>5000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Акционное предложение №3</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Наименование программы</td>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Информационная безопасность. Обеспечение защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, криптографическими и некриптографическими методами</td>
+                                        <td>554</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obrazovatelnuyu-deyatelnost?ysclid=lsbenizvvm35949564
+                                            <br>http://isedu.ru/documents.dopprof/index.htm
+                                            </td>
+                                        <td>65000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Программа повышения квалификации специалистов, работающих в области обеспечения безопасности значимых объектов критической информационной инфраструктуры</td>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>30000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Акционное предложение №4</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Наименование программы</td>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Информационная безопасность. Обеспечение защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, криптографическими и некриптографическими методами</td>
+                                        <td>554</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obrazovatelnuyu-deyatelnost?ysclid=lsbenizvvm35949564
+                                            <br>http://isedu.ru/documents.dopprof/index.htm
+                                            </td>
+                                        <td>65000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Основы компьютерной криминалистики и методики реагирования на инциденты информационной безопасности</td>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>30000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>
+                          <details class="details">
+                            <summary class="details__title"><p>Акционное предложение №5</p></summary>
+                            <div class="details__content">
+                                <table class="details__table" border="1" width="100%">
+                                    <tr>
+                                        <td>Наименование программы</td>
+                                        <td>Объем программы, часов</td>
+                                        <td>Ссылка на подтверждение согласования с ФСТЭК/ФСБ</td>
+                                        <td>Стоимость обучения 1 слушателя, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Информационная безопасность. Обеспечение защиты информации ограниченного доступа, не содержащей сведения, составляющие государственную тайну, криптографическими и некриптографическими методами</td>
+                                        <td>554</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obrazovatelnuyu-deyatelnost?ysclid=lsbenizvvm35949564
+                                            <br>http://isedu.ru/documents.dopprof/index.htm
+                                            </td>
+                                        <td>65000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Основы компьютерной криминалистики и методики реагирования на инциденты информационной безопасности</td>
+                                        <td>72</td>
+                                        <td>-</td>
+                                        <td>30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Программа повышения квалификации специалистов, работающих в области обеспечения безопасности значимых объектов критической информационной инфраструктуры</td>
+                                        <td>108</td>
+                                        <td>https://fstec.ru/dokumenty/vse-dokumenty/perechni/perechen-organizatsij-osushchestvlyayushchikh-obra...</td>
+                                        <td>30000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </details>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course__buttons">
+            <a href="#" class="link-popup2">Записаться на курс</a>
+            <a href="" class="link-popup">Помочь с выбором</a>
+        </div>
+    </div>
+</section>
+<section class="practice" id="practice">
+    <div class="container practice__row">
+        <h1 class="practice__title">Опыт</h1>
+        <div class="practice__marquee">
+            <div class="practice__marquee-content">
+                <img src="../images/1.webp" alt="Image 01">
+                <img src="../images/2.webp" alt="Image 02">
+                <img src="../images/3.webp" alt="Image 3">
+                <img src="../images/4.webp" alt="Image 4">
+                <img src="../images/5.webp" alt="Image 5">
+                <img src="../images/6.webp" alt="Image 6">
+                <img src="../images/7.webp" alt="Image 7">
+                <img src="../images/8.webp" alt="Image 8">
+                <img src="../images/19.webp" alt="Image 9">
+                <img src="../images/10.webp" alt="Image 10">
+                <img src="../images/11.webp" alt="Image 11">
+                <img src="../images/12.webp" alt="Image 12">
+                <img src="../images/13.webp" alt="Image 13">
+                <img src="../images/14.webp" alt="Image 14">
+                <img src="../images/15.webp" alt="Image 15">
+                <img src="../images/16.webp" alt="Image 16">
+                <img src="../images/17.webp" alt="Image 17">
+                <img src="../images/18.webp" alt="Image 18">
+                <img src="../images/19.webp" alt="Image 19">
+                <img src="../images/20.webp" alt="Image 20">
+                <img src="../images/21.webp" alt="Image 21">
+                <img src="../images/22.webp" alt="Image 22">
+                <img src="../images/23.webp" alt="Image 23">
+                <img src="../images/24.webp" alt="Image 24">
+                <img src="../images/25.webp" alt="Image 25">
+                <img src="../images/26.webp" alt="Image 26">
+                <img src="../images/27.webp" alt="Image 27">
+                <img src="../images/28.webp" alt="Image 28">
+                <img src="../images/29.webp" alt="Image 29">
+                <img src="../images/30.webp" alt="Image 30">
+            </div>
+        </div>
+        <div class="practice__pdf">
+            <div id="pdf-container"></div>
+            <a href="../images/licenzia.pdf" download style="text-decoration: none; color: blue;">Скачать PDF</a>
+        </div>
+    </div>
+</section>
+<section class="team" id="team">
+    <div class="container team__row">
+        <h1 class="team__title">Наша команда</h1>
+        
+</section>
+<footer>
+    footer
+</footer>
+ <script src="js/main.min.js"></script>
+</body>
+</html>
